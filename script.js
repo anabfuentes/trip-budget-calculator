@@ -2,8 +2,8 @@ var tripInfoButton = document.querySelector(".trip-info");
 var dailyBudget = document.querySelector(".daily-budget");
 
 var tripInfo = function () {
-  var totalBudget = Number(prompt("What is your total budget for this trip? "));
-  var accommodation = Number(prompt("What are your accommodation costs? "));
+  var totalBudget = Number(prompt("What is your total budget for this trip? Do not type dollar sign."));
+  var accommodation = Number(prompt("What are your accommodation costs? Do not type dollar sign. "));
   var numDays = Number(prompt("How many days does your trip last? "));
 
   calculateDailyBudget(totalBudget, accommodation, numDays);
